@@ -1,0 +1,23 @@
+.trip-list-header {
+  background-color: white;
+  margin-top: 20px;
+  padding: 15px;
+  display: flex;
+
+  h2 {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  button {
+    margin-right: 10px;
+    background-color: #3388eb;
+  }
+}
+
+.table-row-head {
+  box-shadow: "0px 4px 8px 0px rgba(0, 0, 0, 0.1)";
+}
