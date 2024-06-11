@@ -1,5 +1,13 @@
+import Header from "./components/header/Header";
+import Home from "./components/home";
+
 function App() {
-  return <>Aerchain Dashboard</>;
+  return (
+    <div className="app">
+      <Header />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
