@@ -1,2 +1,3 @@
-# aerchain-dashboard
-Aerchain trips dashboard 
+Aerchain dashboard
+
+Trips dashboard for aerchain
