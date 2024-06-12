@@ -35,11 +35,12 @@
 
 ### Notes
 
-- FE consumes, the localhost:3000 port currently for data, the port is hardcoded right now, It can also be scaled for production.
-- The db.json file is where all the data is stored, can be replaced with BE database, graphQL etc
-- The header only has the logo, but due to its static functionality, I haven't focussed much on it.
-- I have a few questions left regarding the calculation of udpateStatus functionality. for now, I am updating transporter, lastPingTime.
-- no axios, react router, redux has been used as this is just a single page application, used react context
+- The frontend consumes data from localhost:3000, which can be easily scaled for production by updating the URL.
+- The db.json file stores all the data but can be replaced with a more robust backend database solution like MongoDB, PostgreSQL, or GraphQL.
+- The header component currently displays a static logo. It can be further enhanced with additional functionality if required.
+- The application includes functionality to update the transporter and last ping time, but further enhancements can be made to include more fields or actions.
+- No external libraries like Axios, React Router, or Redux have been used, as the application is a single-page application and uses React context for state management.
+- Components like Cards, AddTripForm, and UpdateStatusForm can be further scaled and broken down into smaller, more reusable components. Due to time constraints, these components are currently as they are.
 
 ### Contact
 
