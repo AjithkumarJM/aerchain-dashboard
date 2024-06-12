@@ -1,7 +1,7 @@
 [
   {
-    "transporter": "Delhivery",
-    "lastPingTime": "2024-06-12T18:30:00.000Z",
+    "transporter": "FedEx",
+    "lastPingTime": "2024-02-13T10:59:56.000Z",
     "_id": "65d5ebadf18f49fe4ef592c2",
     "tripId": "e6115a41-4255-4ed5-9fe1-aaedd665f6e4",
     "tripStartTime": "2024-02-07T10:59:56Z",
@@ -23,7 +23,7 @@
   {
     "_id": "65d5ebad8e0b2d2b73f28631",
     "tripId": "571b4efd-bcc7-4b1f-91e3-4ab430998ba3",
-    "transporter": "DTDC",
+    "transporter": "Bluedart",
     "tripStartTime": "2024-02-11T09:54:22Z",
     "currentStatusCode": "RD",
     "currenStatus": "Reached Destination",
@@ -37,14 +37,13 @@
     "dest": "Rajkot",
     "destLatitude": 11.7,
     "destLongitude": 80.9,
-    "lastPingTime": "2024-06-11T18:30:00.000Z",
-    "createdAt": "2024-02-09T09:54:22.000Z",
-    "tatStatus": "Others"
+    "lastPingTime": "2024-02-12T09:54:22.000Z",
+    "createdAt": "2024-02-09T09:54:22.000Z"
   },
   {
     "_id": "65d5ebadbf575cb40db963bb",
     "tripId": "8f8d7d25-be33-4cd1-99c5-4f1ca4daddd8",
-    "transporter": "Merks",
+    "transporter": "DHL",
     "tripStartTime": "2024-02-18T11:45:51Z",
     "currentStatusCode": "DEL",
     "currenStatus": "Delivered",
@@ -58,9 +57,8 @@
     "dest": "Patna",
     "destLatitude": 15.7,
     "destLongitude": 86.9,
-    "lastPingTime": "2024-06-11T18:30:00.000Z",
-    "createdAt": "2024-02-12T11:45:51.000Z",
-    "tatStatus": "Others"
+    "lastPingTime": "2024-02-22T11:45:51.000Z",
+    "createdAt": "2024-02-12T11:45:51.000Z"
   },
   {
     "_id": "65d5ebadda81425326ce3003",
@@ -1425,7 +1423,7 @@
   {
     "_id": "65d5ebad80d30f2185f03d31",
     "tripId": "fd0b2582-d786-4588-ba36-cc294555dfe7",
-    "transporter": "Delhivery",
+    "transporter": "FedEx",
     "tripStartTime": "2024-02-06T06:18:59Z",
     "currentStatusCode": "DEL",
     "currenStatus": "Delivered",
@@ -1439,9 +1437,8 @@
     "dest": "Srinagar",
     "destLatitude": 21.2,
     "destLongitude": 81.4,
-    "lastPingTime": "2024-06-11T18:30:00.000Z",
-    "createdAt": "2024-01-31T06:18:59.000Z",
-    "tatStatus": "Others"
+    "lastPingTime": "2024-02-12T06:18:59.000Z",
+    "createdAt": "2024-01-31T06:18:59.000Z"
   },
   {
     "_id": "65d5ebadb66df55d27de891a",
@@ -8066,7 +8063,7 @@
   {
     "_id": "65d5ebad488d04eab7c258a1",
     "tripId": "fd3681a1-6646-4ec3-bc44-913dc74029d9",
-    "transporter": "DTDC",
+    "transporter": "DHL",
     "tripStartTime": "2024-02-21T08:08:17Z",
     "currentStatusCode": "RD",
     "currenStatus": "Reached Destination",
@@ -8080,9 +8077,8 @@
     "dest": "Nashik",
     "destLatitude": 27.1,
     "destLongitude": 88.3,
-    "lastPingTime": "2024-06-14T18:30:00.000Z",
-    "createdAt": "2024-02-21T08:08:17.000Z",
-    "tatStatus": "Others"
+    "lastPingTime": "2024-02-26T08:08:17.000Z",
+    "createdAt": "2024-02-21T08:08:17.000Z"
   },
   {
     "_id": "65d5ebad7f592710a968e9e5",
@@ -8483,19 +8479,5 @@
     "destLongitude": 97.1,
     "lastPingTime": "2024-02-16T07:01:48.000Z",
     "createdAt": "2024-02-12T07:01:48.000Z"
-  },
-  {
-    "tripId": "dd013bd4-b45f-4c79-93e3-2353c5c9e0af",
-    "transporter": "DTDC",
-    "source": "Madurai",
-    "dest": "Banglore",
-    "phoneNumber": "9898989898",
-    "_id": "698d49c7640dc7a06b75d608",
-    "tripStartTime": "2024-06-12T06:30:35.069Z",
-    "currentStatusCode": "BKD",
-    "currenStatus": "Booked",
-    "etaDays": 0,
-    "distanceRemaining": 239,
-    "tripEndTime": ""
   }
 ]
