@@ -31,7 +31,8 @@
    ```sh
    npm run dev
    ```
-6. Open your browser and navigate to `http://localhost:3000` to see the application running.
+6. Open your browser and navigate to `http://localhost:3001` to see the application running.
+7. Open `http://localhost:3001` to see the BE data.
 
 ### Notes
 
