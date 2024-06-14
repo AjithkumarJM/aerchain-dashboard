@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogTitle,
@@ -21,17 +21,53 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 
+const currentStatusCodes = [
+  {
+    value: "BKD",
+    label: "Booked",
+  },
+  {
+    value: "INT",
+    label: "In Transit",
+  },
+  {
+    value: "RD",
+    label: "Reached Desitnation",
+  },
+  {
+    value: "DEL",
+    label: "Delivered",
+  },
+];
+
 const UpdateStatusForm = ({ open, onClose, tripId }) => {
   const { fetchTrips, trips } = useTripContext();
   const [transporter, setTransporter] = useState("");
   const [lastPingTime, setLastPingTime] = useState(null);
   const [loading, setLoading] = useState(false);
+  const currentTrip = trips.find((trip) => trip.tripId === tripId);
+
+  const [statusCodes, setStatusCodes] = useState(currentStatusCodes);
+
+  useEffect(() => {
+    if (currentTrip?.currentStatusCode) {
+      const index = statusCodes.findIndex(
+        (item) => item.value === currentTrip.currentStatusCode
+      );
+
+      setStatusCodes(
+        currentStatusCodes.slice(index, currentStatusCodes.length)
+      );
+    }
+  }, [currentTrip]);
 
   const handleSave = async () => {
-    const currentTrip = trips.find((trip) => trip.tripId === tripId);
     const payload = {
-      transporter,
+      currentStatusCode: transporter,
       lastPingTime: new Date(lastPingTime).toISOString(),
+      currenStatus: currentStatusCodes.find(
+        ({ value }) => value === transporter
+      )?.value,
     };
 
     setLoading(true);
@@ -59,6 +95,14 @@ const UpdateStatusForm = ({ open, onClose, tripId }) => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const renderStatusCodes = () => {
+    return statusCodes.map(({ label, value }) => (
+      <MenuItem value={value} key={value}>
+        {label}
+      </MenuItem>
+    ));
   };
 
   return (
@@ -94,10 +138,7 @@ const UpdateStatusForm = ({ open, onClose, tripId }) => {
               label="Transporter"
               sx={{ minWidth: 200 }}
             >
-              <MenuItem value="Blue Dart">Blue Dart</MenuItem>
-              <MenuItem value="Delhivery">Delhivery</MenuItem>
-              <MenuItem value="DTDC">DTDC</MenuItem>
-              <MenuItem value="Merks">Merks</MenuItem>
+              {renderStatusCodes()}
             </Select>
           </Grid>
           <Grid item xs={12}>
